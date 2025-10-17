@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   background-color: aliceblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
 }
 
 a, li {
@@ -129,6 +130,12 @@ svg {
   }
 
 
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto, 25%);
+  
 }
 
 
