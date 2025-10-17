@@ -107,7 +107,7 @@ svg {
   backdrop-filter: blur(10px);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .menu-bar {
     display: flex;
   }
@@ -115,13 +115,25 @@ svg {
   .hide-links {
     display: none;
   }
-}
 
-@media (max-width: 400px) {
   .side-bar {
     width: 100%;
   }
+
+  section {
+    max-width: 50%;
+  }
 }
+
+/* @media (max-width: 400px) {
+  .side-bar {
+    width: 100%;
+  }
+
+  section{
+    width: 75%;
+  }
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -132,11 +144,52 @@ svg {
 
 }
 
-section {
+@media (min-width: 800px) {
+  section {
+    width: 75%;
+    
+  }
+
+
+}
+
+/* section {
   display: grid;
   grid-template-columns: repeat(auto, 25%);
   
+} */
+
+section{
+  background-color: black;
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  
+  align-items: center;
+  justify-self: center;
+  height: 50%;
+  padding: 20px 20px;
+  min-width: 300px;
+  border-radius: 20px;
 }
+
+.exam {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  row-gap: 10px;
+  width: 100%;
+  
+}
+
+.btns {
+  width: 100%;
+}
+
+/* .btns button {
+  width: 50%;
+} */
 
 
 
