@@ -18,6 +18,7 @@ body {
   background-color: aliceblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
+  width: 100%;
 }
 
 a, li {
@@ -29,6 +30,7 @@ a, li {
 
 nav {
   background-color: black;
+  width: 100%;
   
  
   
@@ -107,33 +109,110 @@ svg {
   backdrop-filter: blur(10px);
 }
 
-@media (min-width: 600px) {
-  .menu-bar {
-    display: flex;
-  }
 
-  .hide-links {
-    display: none;
-  }
-
-  .side-bar {
-    width: 100%;
-  }
-
-  section {
-    max-width: 50%;
-  }
+section{
+  background-color: black;
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  
+  align-items: center;
+  justify-self: center;
+  height: 50%;
+  padding: 20px 20px;
+  width: 300px;
+  border-radius: 20px;
 }
+
+.exam {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* display: grid;
+  row-gap: 10px;
+  width: 100%; */
+  
+}
+
+.btns {
+  width: 100%;
+}
+
+/* .btns button {
+  width: 50%;
+} */
 
 /* @media (max-width: 400px) {
   .side-bar {
     width: 100%;
   }
 
-  section{
+  .hide-links {
+    display: none;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  section {
+    width: 50%;
+  }
+
+} */
+
+@media (max-width: 300px) {
+  .side-bar {
+    width: 100%;
+  }
+
+  .hide-links {
+    display: none;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+  .nav-bar {
+    width: 100%;
+  }
+
+  section {
     width: 75%;
   }
-} */
+
+  .exam {
+    width: 100%;
+  }
+}
+
+
+
+/* @media (max-width: 600px) {
+  
+  
+
+  .side-bar {
+    width: 100%;
+  }
+
+  section {
+    width: 50%;
+  }
+}
+
+@media (min-width: 400px) {
+  .nav-bar {
+    width: 100%;
+  }
+  /* .side-bar {
+    width: 100%;
+  } */
+
+  /* section{
+    width: 75%;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -151,7 +230,7 @@ svg {
   }
 
 
-}
+} */ 
 
 /* section {
   display: grid;
@@ -159,37 +238,6 @@ svg {
   
 } */
 
-section{
-  background-color: black;
-  margin-top: 100px;
-  color: white;
-  display: flex;
-  
-  align-items: center;
-  justify-self: center;
-  height: 50%;
-  padding: 20px 20px;
-  min-width: 300px;
-  border-radius: 20px;
-}
-
-.exam {
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: grid;
-  row-gap: 10px;
-  width: 100%;
-  
-}
-
-.btns {
-  width: 100%;
-}
-
-/* .btns button {
-  width: 50%;
-} */
 
 
 
