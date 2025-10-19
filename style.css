@@ -138,12 +138,16 @@ section{
 
 .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  
   width: 100%;
 }
 
 .btns button {
-  width: 150px;
+  margin-left: 10px;
+  text-align: center;
+  width: 25%;
+  align-items: center;
 
 }
 
@@ -186,6 +190,21 @@ input {
     border-color: aliceblue;
   }
 
+  
+
+}
+
+@media (max-width: 200px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 100px 10%;
+    
+  }
+
+  .btns button {
+    width: 25%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -211,12 +230,16 @@ input {
   }
 
   section {
-    width: 75%;
+    width: 1fr;
+  }
+
+  .exam {
+    width: 100%;
   }
 
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .side-bar {
     width: 100%;
   }
